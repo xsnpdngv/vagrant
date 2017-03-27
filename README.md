@@ -1,4 +1,4 @@
-# vagrant
+# Vagrant
 Reproducible and portable development environment
 
 Vagrant configuration for a Ubuntu virtual machine with a bunch of basic,
@@ -54,9 +54,9 @@ the host OS first has to run an X server. For Windows
 choice as such; for MacOS [XQuartz](https://www.xquartz.org)
 is the standard way; while on Linux having an X server is not a question.
 
-After having the X server run on the host, the VM has to be ssh'd with X11 forwarding
-option enabled (the Vagrant configuration enables this kind of access), and a program
-with GUI can be simply run and displayed...
+After having the X server run on the host, the VM has to be ssh'd with X11
+forwarding option enabled (the Vagrant configuration enables this kind of
+access), and a program with GUI can be simply run and displayed...
 
 ```bash
 ssh -X -p 2222 vagrant@localhost
