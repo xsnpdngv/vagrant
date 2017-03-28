@@ -16,7 +16,7 @@ WD=`pwd`
 $INST gcc make git ksh vim mc curl wget cmake
 
 # GNU autotools
-$INST autoconf automake libtool
+$INST autotools-dev autoconf automake libtool
 
 # Flex & Bison
 $INST --force-yes flex bison
