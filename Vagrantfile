@@ -13,7 +13,8 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   #config.vm.box = "hashicorp/precise64"
-  config.vm.box = "ubuntu/trusty64"
+  #config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/xenial64"
 
   # The time in seconds that Vagrant will wait for the machine to boot and
   # be accessible. By default this is 300 seconds.
@@ -35,7 +36,7 @@ Vagrant.configure("2") do |config|
   # A message to show after vagrant up. This will be shown to the user and
   # is useful for containing instructions such as how to access various
   # components of the development environment.
-  config.vm.post_up_message = "DTT Ubuntu Virtual Box"
+  config.vm.post_up_message = "DTT Ubuntu/Xenial64 Virtual Box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -57,7 +58,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder ".", "/home/vagrant/Projects"
+  config.vm.synced_folder "..", "/home/ubuntu/Projects"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
