@@ -34,8 +34,13 @@ $INST graphviz
 # XSLT processor
 $INST xsltproc
 
-# Pandoc - Universal document converter
-$INST texlive-latex-extra texlive-fonts-recommended pandoc
+# TeX Live full (big enough, consider twice)
+$INST texlive-full
+
+# LaTeX for Pandoc (texlive-full has them also)
+#$INST texlive-latex-extra texlive-fonts-recommended
+# Pandoc - universal document converter
+$INST pandoc
 
 # Doxygen w/ GUI
 $INST doxygen doxygen-gui
