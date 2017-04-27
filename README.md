@@ -42,7 +42,7 @@ After the VM is booted up, it can be reached through either the builtin
 ssh command: `vagrant ssh`, or with the standard ssh program.
 
 ```bash
-ssh -p 2222 vagrant@localhost
+ssh -p 2222 ubuntu@localhost
 ```
 
 X11 forward
@@ -59,6 +59,6 @@ forwarding option enabled (the Vagrant configuration enables this kind of
 access), and a program with GUI can be simply run and displayed...
 
 ```bash
-ssh -X -p 2222 vagrant@localhost
+ssh -X -p 2222 ubuntu@localhost
 xterm &
 ```
