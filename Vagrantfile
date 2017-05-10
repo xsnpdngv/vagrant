@@ -83,8 +83,12 @@ Vagrant.configure("2") do |config|
   # end
 
   # Upload files or directories from the host to the guest machine.
-  config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
-  config.vm.provision "file", source: "~/.vimrc",     destination: ".vimrc"
+  config.vm.provision "file", source: "~/.bashrc",       destination: ".bashrc"
+  config.vm.provision "file", source: "~/.bash_profile", destination: ".bash_profile"
+  config.vm.provision "file", source: "~/.bash_aliases", destination: ".bash_aliases"
+  config.vm.provision "file", source: "~/.gitconfig",    destination: ".gitconfig"
+  config.vm.provision "file", source: "~/.vimrc",        destination: ".vimrc"
+  config.vm.provision "file", source: "~/.vim",          destination: ".vim"
 
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the

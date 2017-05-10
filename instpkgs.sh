@@ -3,7 +3,7 @@
 # @file    instpkgs.sh
 # @brief   shell script to install necessary packages
 # @author  Tamas Dezso <dezso.t.tamas@gmail.com>
-# @date    March 27, 2017
+# @date    May 10, 2017
 # ===========================================================================
 
 apt-get update
@@ -13,7 +13,11 @@ INST="apt-get install -y"
 WD=`pwd`
 
 # GCC etc.
-$INST gcc make git ksh vim mc curl wget cmake
+$INST build-essential # g++, gcc, make, ...
+$INST git ksh mc curl wget cmake
+
+# Vim
+$INST vim # change to vim-gnome or vim-gtk to have clipboard
 
 # GNU autotools
 $INST autotools-dev autoconf automake libtool
